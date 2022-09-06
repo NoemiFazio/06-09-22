@@ -1,0 +1,36 @@
+@import "../../styles/_mixins.scss";
+
+.TopRatedList {
+  @include flex-element(row, center, center, wrap, 20px);
+
+  width: 100%;
+  height: fit-content;
+
+  .TopRatedList_content {
+    @include flex-element(row, space-between, stretch, wrap, 20px);
+
+    width: 800px;
+    padding-bottom: 10px;
+
+    .topRatedStyle {
+      @include flex-element(column, center);
+
+      position: relative;
+      width: 200px;
+      height: 300px;
+      min-width: 200px;
+      min-height: 50px;
+      max-width: 290px;
+      max-height: 50px;
+      cursor: pointer;
+      padding: 25px;
+      border-radius: 20px;
+      color: white;
+      background-color: black;
+
+      h3 {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
